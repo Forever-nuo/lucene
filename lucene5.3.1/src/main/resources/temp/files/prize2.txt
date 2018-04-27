@@ -1,0 +1,14 @@
+Highlights of this Lucene release include:
+
+    An OpenNLP analysis module
+    IndexWriter can opt out of flushing on indexing threads
+    Shapes can be indexed using Google S2 geometry
+    Better relevancy for highlighted passages containing phrases
+    Java 9 performance improvements
+
+The JingDong Prize for Literature has set up a high prize,
+of which the two most popular prizes, the JingDong Literature Award of the year-the domestic Writers' works
+and the Annual JingDong Literary Awards-will be awarded to the winners
+of the 1 million RMB prize for foreign writers' works, respectively.
+
+
