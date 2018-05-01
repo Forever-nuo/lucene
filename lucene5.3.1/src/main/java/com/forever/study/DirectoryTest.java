@@ -4,6 +4,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.apache.lucene.store.Directory;
 import org.apache.lucene.store.FSDirectory;
 
+import java.io.File;
 import java.io.IOException;
 import java.nio.file.Paths;
 
@@ -20,7 +21,7 @@ public class DirectoryTest {
      * @return
      */
     public static Directory directory() throws IOException {
-        return FSDirectory.open(Paths.get("D:\\temp\\index"));
+        return FSDirectory.open(new File("D:\\temp\\index"));
     }
 
 }

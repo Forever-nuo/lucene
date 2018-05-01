@@ -8,11 +8,13 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="lucene5.3.1" />
+        <module name="solr" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="lucene" target="1.5" />
       <module name="lucene5.3.1" target="1.7" />
+      <module name="solr" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>

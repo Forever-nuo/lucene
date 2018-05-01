@@ -11,6 +11,7 @@ import org.apache.lucene.search.highlight.Highlighter;
 import org.apache.lucene.search.highlight.InvalidTokenOffsetsException;
 import org.apache.lucene.search.highlight.QueryScorer;
 import org.apache.lucene.search.highlight.SimpleFragmenter;
+import org.apache.lucene.util.Version;
 import org.junit.Test;
 
 import java.io.IOException;
@@ -44,7 +45,7 @@ public class HighLighterTest {
             String fileContext = doc.get("fileContext");
 
             highlighter.setTextFragmenter(new SimpleFragmenter(fileContext.length()));
-            String bestFragment = highlighter.getBestFragment(new StandardAnalyzer(), "fileContext", doc.get("fileContext"));
+            String bestFragment = highlighter.getBestFragment(new StandardAnalyzer(Version.LUCENE_47), "fileContext", doc.get("fileContext"));
             log.info(bestFragment);
         }
 

@@ -3,6 +3,7 @@ package com.forever.study;
 import org.apache.lucene.store.Directory;
 import org.apache.lucene.store.FSDirectory;
 
+import java.io.File;
 import java.io.IOException;
 import java.nio.file.Paths;
 
@@ -17,7 +18,7 @@ public class LuceneUtils {
 
     static {
         try {
-            DIRECTORY = FSDirectory.open(Paths.get("D:\\temp\\index"));
+            DIRECTORY = FSDirectory.open(new File("D:\\temp\\index"));
         } catch (IOException e) {
             e.printStackTrace();
         }

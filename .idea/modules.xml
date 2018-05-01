@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/lucene.iml" filepath="$PROJECT_DIR$/lucene.iml" />
       <module fileurl="file://$PROJECT_DIR$/lucene5.3.1/lucene5.3.1.iml" filepath="$PROJECT_DIR$/lucene5.3.1/lucene5.3.1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/solr/solr.iml" filepath="$PROJECT_DIR$/solr/solr.iml" />
     </modules>
   </component>
 </project>

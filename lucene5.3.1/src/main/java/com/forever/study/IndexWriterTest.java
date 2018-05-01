@@ -11,6 +11,7 @@ import org.apache.lucene.index.IndexWriterConfig;
 import org.apache.lucene.index.Term;
 import org.apache.lucene.store.Directory;
 import org.apache.lucene.store.FSDirectory;
+import org.apache.lucene.util.Version;
 import org.junit.Test;
 
 import java.io.File;
@@ -69,7 +70,7 @@ public class IndexWriterTest {
      * @throws IOException
      */
     public IndexWriter createIndexWrite() throws IOException {
-        return new IndexWriter(DirectoryTest.directory(), new IndexWriterConfig(new StandardAnalyzer()));
+        return new IndexWriter(DirectoryTest.directory(), new IndexWriterConfig(Version.LUCENE_47,new StandardAnalyzer(Version.LUCENE_47)));
     }
 
 }

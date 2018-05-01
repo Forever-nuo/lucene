@@ -12,7 +12,7 @@
         <maven.compiler.source>1.7</maven.compiler.source>
         <maven.compiler.target>1.7</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <lucene.version>5.3.1</lucene.version>
+        <lucene.version>4.7.2</lucene.version>
         <slf4j.version>1.7.24</slf4j.version>
     </properties>
 
@@ -21,6 +21,12 @@
             <groupId>org.apache.lucene</groupId>
             <artifactId>lucene-core</artifactId>
             <version>${lucene.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.solr</groupId>
+            <artifactId>solr-core</artifactId>
+            <version>4.10.4</version>
         </dependency>
 
 
@@ -48,6 +54,12 @@
             <groupId>org.apache.lucene</groupId>
             <artifactId>lucene-analyzers-smartcn</artifactId>
             <version>${lucene.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.janeluo</groupId>
+            <artifactId>ikanalyzer</artifactId>
+            <version>2012_u6</version>
         </dependency>
 
         <!-- 高亮显示 -->
